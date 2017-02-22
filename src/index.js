@@ -1,7 +1,7 @@
-const React = require('react');
-const ReactDOMServer = require('react-dom/server');
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
 
-const component = React.createElement('div', null, 'Hello World!');
+const component = <div>Hello World!</div>;
 const componentAsString = ReactDOMServer.renderToString(component);
 
 console.log(componentAsString);
