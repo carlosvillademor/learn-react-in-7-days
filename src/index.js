@@ -1,7 +1,9 @@
 import React from 'react';
-import ReactDOMServer from 'react-dom/server';
+import {render} from 'react-dom';
 
 const component = <div>Hello World!</div>;
-const componentAsString = ReactDOMServer.renderToString(component);
 
-console.log(componentAsString);
+render(
+  component,
+  document.getElementById('render-app-here')
+);
